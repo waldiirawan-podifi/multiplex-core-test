@@ -1,16 +1,17 @@
 {
   "name": "multiplex-core-test",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
   "main": "dist/index.js",
   "types": "types/index.d.ts",
   "scripts": {
     "build": "npm run lint && tsc",
     "format": "prettier --write \"{src,test}/**/*.ts\"",
-    "lint": "eslint \"{src,test}/**/*.ts\" --fix"
+    "lint": "eslint \"{src,test}/**/*.ts\" --fix",
+    "prepublish": "npm run build"
   },
   "author": "Podifiai",
-  "private": true,
+  "private": false,
   "license": "UNLICENSED",
   "devDependencies": {
     "@trivago/prettier-plugin-sort-imports": "^4.3.0",
