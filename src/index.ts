@@ -1,1 +1,1 @@
-export type * from './dtos/user.dto'
+export type * from './dtos/user.dto';
